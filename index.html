@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso de Privacidad — Percha</title>
+<style>
+  :root{
+    --bg:#FAF8F5; --surface:#ffffff; --ink:#1A1815; --muted:#8A8175;
+    --accent:#B5654A; --line:#E8E3DC;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:40px 22px 80px}
+  header{border-bottom:1px solid var(--line); padding-bottom:20px; margin-bottom:28px}
+  h1{font-family:"EB Garamond",Georgia,serif; font-size:2.1rem; margin:.2em 0 .1em}
+  h2{font-size:1.2rem; margin:2em 0 .4em; color:var(--ink)}
+  .tag{color:var(--accent); font-weight:600; letter-spacing:.12em; text-transform:uppercase; font-size:.72rem}
+  .muted{color:var(--muted); font-size:.9rem}
+  a{color:var(--accent)}
+  ul{padding-left:1.2em}
+  li{margin:.3em 0}
+  table{width:100%; border-collapse:collapse; margin:.6em 0; font-size:.94rem}
+  th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:1em 0}
+  code{background:#f1ece5; padding:1px 5px; border-radius:4px; font-size:.88em}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tag">Percha · Clóset digital</div>
+    <h1>Aviso de Privacidad</h1>
+    <p class="muted">Última actualización: 14 de agosto de 2026</p>
+  </header>
+
+  <p>Este Aviso describe cómo <strong>Percha</strong> (“la app”, “nosotros”) recopila,
+  usa, comparte y protege tu información cuando usas la aplicación de clóset virtual,
+  probador y bitácora. Al usar Percha aceptas las prácticas aquí descritas.</p>
+
+  <h2>1. Qué información recopilamos</h2>
+  <table>
+    <tr><th>Tipo</th><th>Ejemplos</th></tr>
+    <tr><td>Cuenta</td><td>Correo electrónico y, si entras con Google, tu nombre y foto de perfil de Google.</td></tr>
+    <tr><td>Perfil</td><td>Nombre visible, idioma y (opcional) tu ciudad para el clima.</td></tr>
+    <tr><td>Fotos que subes</td><td>Fotos de tus prendas y, si lo eliges, una foto de tu cuerpo/rostro para el avatar del probador. También las imágenes de outfits que generes o guardes.</td></tr>
+    <tr><td>Contenido de uso</td><td>Prendas, outfits, bitácora de uso, viajes y listas de maleta que creas en la app.</td></tr>
+    <tr><td>Datos técnicos</td><td>Conteos de uso (p. ej. cuántas pruebas realistas llevas en el día) para aplicar los límites del plan.</td></tr>
+  </table>
+  <p class="muted">No recopilamos datos de pago dentro de la app. No rastreamos tu ubicación en segundo plano.</p>
+
+  <h2>2. Para qué usamos tu información</h2>
+  <ul>
+    <li>Crear y administrar tu cuenta e inicio de sesión.</li>
+    <li>Guardar tu clóset, outfits, bitácora y viajes, y sincronizarlos entre tus dispositivos.</li>
+    <li>Procesar tus fotos para <strong>recortar el fondo</strong> de las prendas y para generar el <strong>probador realista</strong> (superponer tu ropa sobre tu avatar).</li>
+    <li>Sugerir outfits según el clima y la ocasión que indiques.</li>
+    <li>Aplicar los límites del plan gratuito y, en su caso, del plan de pago.</li>
+  </ul>
+
+  <h2>3. Con quién compartimos tu información (proveedores)</h2>
+  <p>No vendemos tus datos. Los compartimos únicamente con proveedores que nos ayudan a operar la app, y solo lo necesario para prestar el servicio:</p>
+  <table>
+    <tr><th>Proveedor</th><th>Para qué</th></tr>
+    <tr><td>Supabase</td><td>Autenticación, base de datos y almacenamiento de tus fotos y datos.</td></tr>
+    <tr><td>Google</td><td>Inicio de sesión con Google (si lo usas).</td></tr>
+    <tr><td>Google Gemini (IA)</td><td>Procesa tus fotos de avatar y prendas para <strong>generar la imagen del probador realista</strong> y para sugerir outfits. Las imágenes se envían para generar el resultado.</td></tr>
+    <tr><td>Servicio de procesamiento de imágenes (Railway)</td><td>Recorte automático del fondo de las prendas.</td></tr>
+    <tr><td>Infraestructura (Render, Upstash)</td><td>Servidor de la app y cola de tareas.</td></tr>
+    <tr><td>Servicios de clima y geocodificación</td><td>Obtener el pronóstico del destino/ciudad que indiques.</td></tr>
+  </table>
+  <p class="muted">Estos proveedores tienen sus propias políticas de privacidad y pueden procesar datos fuera de tu país.</p>
+
+  <h2>4. Sobre tus fotos y datos sensibles</h2>
+  <div class="card">
+    <p>Tu foto de cuerpo/rostro se usa <strong>solo</strong> para generar tu avatar y las imágenes del probador. <strong>No</strong> hacemos reconocimiento facial ni identificación biométrica, <strong>no</strong> usamos tus fotos para entrenar modelos propios y <strong>no</strong> las publicamos. Subir una foto de tu cuerpo es opcional.</p>
+  </div>
+
+  <h2>5. Almacenamiento y seguridad</h2>
+  <p>Tus datos y fotos se guardan en Supabase con acceso restringido por reglas de seguridad a nivel de fila (cada usuario solo puede ver lo suyo). Las conexiones usan cifrado en tránsito (HTTPS/TLS). Ningún sistema es 100% infalible, pero aplicamos medidas razonables para protegerte.</p>
+
+  <h2>6. Conservación y eliminación</h2>
+  <p>Conservamos tu información mientras tu cuenta esté activa. Desde la app puedes:</p>
+  <ul>
+    <li><strong>Exportar</strong> tus datos.</li>
+    <li><strong>Eliminar tu cuenta</strong>, lo que borra tu perfil, prendas, outfits, avatar y fotos asociadas.</li>
+  </ul>
+  <p>También puedes solicitar la eliminación escribiéndonos al correo de contacto.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>Puedes acceder, corregir, exportar o eliminar tu información. Para ejercer cualquier derecho, escríbenos al correo de contacto y responderemos en un plazo razonable.</p>
+
+  <h2>8. Menores de edad</h2>
+  <p>Percha no está dirigida a menores de 13 años y no recopilamos conscientemente su información. Si crees que un menor nos proporcionó datos, contáctanos para eliminarlos.</p>
+
+  <h2>9. Cambios a este Aviso</h2>
+  <p>Podemos actualizar este Aviso. Publicaremos la nueva versión en esta página con su fecha de actualización.</p>
+
+  <h2>10. Contacto</h2>
+  <p>Para dudas o solicitudes sobre privacidad: <a href="mailto:edgarmg.1989@gmail.com">edgarmg.1989@gmail.com</a></p>
+
+  <footer>
+    Percha — clóset virtual, probador y bitácora. Este Aviso aplica a la app en sus
+    versiones iOS y Android.
+  </footer>
+</div>
+</body>
+</html>

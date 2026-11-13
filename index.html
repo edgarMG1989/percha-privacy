@@ -37,7 +37,7 @@
   <header>
     <div class="tag">Percha · Clóset digital</div>
     <h1>Aviso de Privacidad</h1>
-    <p class="muted">Última actualización: 14 de agosto de 2026</p>
+    <p class="muted">Última actualización: 13 de noviembre de 2026</p>
   </header>
 
   <p>Este Aviso describe cómo <strong>Percha</strong> (“la app”, “nosotros”) recopila,
@@ -53,7 +53,7 @@
     <tr><td>Contenido de uso</td><td>Prendas, outfits, bitácora de uso, viajes y listas de maleta que creas en la app.</td></tr>
     <tr><td>Datos técnicos</td><td>Conteos de uso (p. ej. cuántas pruebas realistas llevas en el día) para aplicar los límites del plan.</td></tr>
   </table>
-  <p class="muted">No recopilamos datos de pago dentro de la app. No rastreamos tu ubicación en segundo plano.</p>
+  <p class="muted">No recopilamos datos de tarjeta ni de pago: si contratas el plan de pago, el cobro lo procesa Google Play (Android) o App Store (iOS) y nosotros solo recibimos la confirmación de que tu suscripción está activa. No usamos el GPS de tu teléfono ni rastreamos tu ubicación.</p>
 
   <h2>2. Para qué usamos tu información</h2>
   <ul>
@@ -72,8 +72,9 @@
     <tr><td>Google</td><td>Inicio de sesión con Google (si lo usas).</td></tr>
     <tr><td>Google Gemini (IA)</td><td>Procesa tus fotos de avatar y prendas para <strong>generar la imagen del probador realista</strong> y para sugerir outfits. Las imágenes se envían para generar el resultado.</td></tr>
     <tr><td>Servicio de procesamiento de imágenes (Railway)</td><td>Recorte automático del fondo de las prendas.</td></tr>
-    <tr><td>Infraestructura (Render, Upstash)</td><td>Servidor de la app y cola de tareas.</td></tr>
-    <tr><td>Servicios de clima y geocodificación</td><td>Obtener el pronóstico del destino/ciudad que indiques.</td></tr>
+    <tr><td>Infraestructura (Render)</td><td>Servidor de la app y procesamiento de tareas en segundo plano.</td></tr>
+    <tr><td>Google Play / App Store</td><td>Cobro del plan de pago, solo si lo contratas.</td></tr>
+    <tr><td>Open-Meteo (clima y geocodificación)</td><td>Obtener el pronóstico de la ciudad o destino que indiques. Solo se envía el nombre o las coordenadas de esa ciudad, no tus datos personales.</td></tr>
   </table>
   <p class="muted">Estos proveedores tienen sus propias políticas de privacidad y pueden procesar datos fuera de tu país.</p>
 
@@ -83,7 +84,7 @@
   </div>
 
   <h2>5. Almacenamiento y seguridad</h2>
-  <p>Tus datos y fotos se guardan en Supabase con acceso restringido por reglas de seguridad a nivel de fila (cada usuario solo puede ver lo suyo). Las conexiones usan cifrado en tránsito (HTTPS/TLS). Ningún sistema es 100% infalible, pero aplicamos medidas razonables para protegerte.</p>
+  <p>Tus datos y fotos se guardan en Supabase con acceso restringido por reglas de seguridad a nivel de fila (cada usuario solo puede ver lo suyo). Las conexiones usan cifrado en tránsito (HTTPS/TLS) y tu sesión se guarda cifrada en el almacenamiento seguro del teléfono (Keychain en iOS, Keystore en Android). Ningún sistema es 100% infalible, pero aplicamos medidas razonables para protegerte.</p>
 
   <h2>6. Conservación y eliminación</h2>
   <p>Conservamos tu información mientras tu cuenta esté activa. Desde la app puedes:</p>
@@ -91,7 +92,7 @@
     <li><strong>Exportar</strong> tus datos.</li>
     <li><strong>Eliminar tu cuenta</strong>, lo que borra tu perfil, prendas, outfits, avatar y fotos asociadas.</li>
   </ul>
-  <p>También puedes solicitar la eliminación escribiéndonos al correo de contacto.</p>
+  <p>También puedes solicitar la eliminación escribiéndonos al correo de contacto. Los pasos detallados están en <a href="eliminar-cuenta.html">Eliminar tu cuenta de Percha</a>.</p>
 
   <h2>7. Tus derechos</h2>
   <p>Puedes acceder, corregir, exportar o eliminar tu información. Para ejercer cualquier derecho, escríbenos al correo de contacto y responderemos en un plazo razonable.</p>
@@ -107,7 +108,7 @@
 
   <footer>
     Percha — clóset virtual, probador y bitácora. Este Aviso aplica a la app en sus
-    versiones iOS y Android. · <a href="terms.html">Términos de Servicio</a>
+    versiones iOS y Android. · <a href="terms.html">Términos de Servicio</a> · <a href="eliminar-cuenta.html">Eliminar tu cuenta</a>
   </footer>
 </div>
 </body>
